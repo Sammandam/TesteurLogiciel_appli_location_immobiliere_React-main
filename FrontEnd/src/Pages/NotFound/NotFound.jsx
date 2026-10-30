@@ -1,5 +1,5 @@
 import { Link } from "react-router"; //  composant de lien de React Router
-import "./NotFound.css"; // on relie le fichier CSS à ce composant //
+
 
 export default function NotFound() { //
   return ( // renvoie à React le contenu (JSX) à afficher à l'écran
