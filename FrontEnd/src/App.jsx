@@ -1,12 +1,11 @@
-import { Routes, Route } from "react-router"; // composants de React Router pour déclarer les routes
-import Home from "./Pages/Home/Home";
-import NotFound from "./Pages/NotFound/NotFound";
+import Layout from "./Composants/Layout/Layout"; // structure commune : Header + page + Footer
+import AppRouter from "./Router/AppRouter"; // routeur : choisit la page selon l'adresse
 
+// Composant principal : affiche le routeur à l'intérieur du Layout
 export default function App() {
-  return ( // envoie le contenu en JSX à React
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+  return ( 
+    <Layout>
+      <AppRouter />
+    </Layout>
   );
 }

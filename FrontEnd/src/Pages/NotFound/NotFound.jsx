@@ -1,12 +1,12 @@
-import { Link } from "react-router"; //  composant de lien de React Router
+import { Link } from "react-router"; // composant de lien de React Router
 
 
-export default function NotFound() { //
+export default function NotFound() { 
   return ( // renvoie à React le contenu (JSX) à afficher à l'écran
-    <main className="notfound"> //
+    <div className="notfound"> 
       <h1 className="notfound__title">404</h1>
       <p className="notfound__text"> Oups! La page que vous demandez n'existe pas.</p>
       <Link to="/" className="notfound__link"> Retourner sur la page d'accueil</Link>
-    </main>
+    </div>
   );
 }
