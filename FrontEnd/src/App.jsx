@@ -3,7 +3,7 @@ import AppRouter from "./Router/AppRouter"; // routeur : choisit la page selon l
 
 // Composant principal : affiche le routeur à l'intérieur du Layout
 export default function App() {
-  return ( 
+  return ( // envoie le contenu en JSX à React
     <Layout>
       <AppRouter />
     </Layout>

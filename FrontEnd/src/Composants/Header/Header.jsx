@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-
+import "./Header.css";
 import logo from "../../assets/Logo/Logo-Kasa.png";
 
 export default function Header() {
@@ -15,4 +15,5 @@ export default function Header() {
     </header>
   );
 }
+
 

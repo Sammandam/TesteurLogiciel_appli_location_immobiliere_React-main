@@ -9,7 +9,7 @@ import NotFound from "../Pages/NotFound/NotFound";
 export default function AppRouter() {
   return ( // envoie le contenu en JSX à React
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} /> 
         <Route path="/about" element={<APropos />} />
         <Route path="/logement/:id" element={<Logement />} />
         <Route path="*" element={<NotFound />} />

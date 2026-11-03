@@ -4,7 +4,7 @@ import imageAccueil from "../../assets/Banner/banner-accueil.png"; // l'image de
 export default function Home () {
     return (
         <div className="home">
-            <Banner image={imageAccueil} />
+            <Banner image={imageAccueil} /> // il utilise le composant banner avec l'image des falaises
         </div>
     );
 }

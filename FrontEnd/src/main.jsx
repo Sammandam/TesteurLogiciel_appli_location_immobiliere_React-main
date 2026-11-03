@@ -7,9 +7,9 @@ import App from "./App.jsx"; // composant principal, qui contient les routes
 
 // Récupère la div "root" de index.html et y affiche l'application
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
+  <StrictMode> 
     <BrowserRouter> 
-      <App />
+      <App /> // 
     </BrowserRouter>
   </StrictMode>
 );

@@ -1,0 +1,26 @@
+.notfound {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: #ff6060;
+    padding: 60px 0;
+}
+
+.notfound__title {
+  font-size: 288px;
+  font-weight: 700;
+  line-height: 1; 
+  color: #ff6060;
+}
+
+.notfound__text {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 60px 0 180px;
+}
+
+.notfound__link {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
