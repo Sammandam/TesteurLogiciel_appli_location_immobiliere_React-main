@@ -4,6 +4,8 @@
     background-color: white;
     color: #ff6060;
     padding: 60px 0;
+    align-items: center;
+    text-align: center;
 }
 
 .notfound__title {

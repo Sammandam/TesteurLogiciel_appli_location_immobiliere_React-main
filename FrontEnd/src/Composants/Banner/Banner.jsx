@@ -1,4 +1,4 @@
-
+import "./Banner.css";
 
 // Bannière  : reçoit une image et un titre 
 export default function Banner(props) {

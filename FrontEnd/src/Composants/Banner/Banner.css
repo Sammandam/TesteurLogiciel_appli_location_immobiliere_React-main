@@ -1,0 +1,14 @@
+.banner {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  overflow: hidden; /* coupe ce qui dépasse, pour que l’img respecte les coins arrondis du conteneur */
+  margin: 0 0 40px 0;
+}
+
+.banner__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

@@ -1,4 +1,3 @@
-
 import logo from "../../assets/Logo/Logo-Kasa-footer.png";
 import "./Footer.css";
 export default function Footer() {

@@ -24,3 +24,6 @@ Nav ul li a {
   height: auto;
 }
 
+.header__link.active {
+  text-decoration: underline;
+}
