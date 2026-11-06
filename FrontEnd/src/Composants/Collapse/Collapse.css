@@ -1,0 +1,42 @@
+.collapse {
+  width: 100%;
+}
+
+/* Barre rouge du titre */
+.collapse__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6060;
+  color: white;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Flèche : tourne quand le Collapse est ouvert */
+.collapse__arrow {
+  width: 24px;
+  height: auto;
+  transition: transform 0.3s;
+  color: white;
+}
+
+.collapse__arrow--open {
+  transform: rotate(180deg);
+}
+
+/* Contenu affiché sous la barre */
+.collapse__content {
+  background-color: rgb(224, 224, 224);
+  color: #ff6060;
+  font-size: 18px;
+  padding: 30px 20px 20px;
+  margin-top: -5px;
+  border-radius: 0 0 5px 5px;
+}
