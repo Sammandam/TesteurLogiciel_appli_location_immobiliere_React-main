@@ -1,0 +1,53 @@
+/* Carrousel : bloc arrondi, contenu superposé */
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+/* La photo remplit tout le carrousel */
+.slideshow__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Flèches : centrées verticalement, sans fond ni bordure */
+.slideshow__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slideshow__arrow img {
+  width: 48px;
+  height: auto;
+}
+
+.slideshow__arrow--left {
+  left: 20px;
+}
+
+.slideshow__arrow--right {
+  right: 20px;
+}
+
+/* Compteur : centré en bas, en blanc */
+.slideshow__counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}

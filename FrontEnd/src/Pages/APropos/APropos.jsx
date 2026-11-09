@@ -11,7 +11,7 @@ export default function APropos() {
       <Banner image={imageAPropos} />
       <div className="apropos__list">
         {/* Un Collapse par élément du fichier de données */}
-        {aPropos.map((item) => (// 
+        {aPropos.map((item) => ( 
           <Collapse key={item.id} title={item.title}>
             <p>{item.info}</p> 
           </Collapse>
