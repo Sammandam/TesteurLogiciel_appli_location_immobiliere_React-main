@@ -1,0 +1,16 @@
+/* Les 5 étoiles alignées */
+.rating {
+  display: flex;
+  gap: 8px;
+}
+
+/* Étoile grise par défaut */
+.rating__star {
+  font-size: 30px;
+  color: #e3e3e3;
+}
+
+/* Étoile rouge si elle fait partie de la note */
+.rating__star--active {
+  color: #ff6060;
+}

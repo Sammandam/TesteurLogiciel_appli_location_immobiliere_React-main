@@ -1,0 +1,45 @@
+/* Nom à gauche, photo à droite */
+.logement__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Bloc d'informations : deux colonnes */
+.logement__infos {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.logement__title {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.logement__location {
+  font-size: 18px;
+  margin: 5px 0 20px;
+}
+
+/* Colonne de droite : alignée à droite */
+.logement__side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Les deux Collapse côte à côte */
+.logement__collapses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 76px;
+  align-items: start; 
+}

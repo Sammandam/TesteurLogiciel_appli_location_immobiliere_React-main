@@ -1,0 +1,21 @@
+/* Nom à gauche, photo à droite */
+.host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.host__name {
+  margin: 0;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Photo ronde */
+.host__picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}

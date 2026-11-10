@@ -9,7 +9,7 @@ import App from "./App.jsx"; // composant principal, qui contient les routes
 createRoot(document.getElementById("root")).render(
   <StrictMode> 
     <BrowserRouter> 
-      <App /> // 
+      <App /> 
     </BrowserRouter>
   </StrictMode>
 );
