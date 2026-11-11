@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"; // hooks de React
-import { useParams } from "react-router"; // lit l'id dans l'adresse
-import NotFound from "../NotFound/NotFound"; // page 404, si le logement n'existe pas
+import { useParams, Navigate } from "react-router"; // lit l'id dans l'adresse, et permet de rediriger
+
 import Slideshow from "../../Composants/Slideshow/Slideshow"; // le carrousel
 import Tag from "../../Composants/Tag/Tag"; // une étiquette
 import "./Logement.css"; // style de la page Logement
@@ -29,14 +29,14 @@ export default function Logement() {
       });
   }, [id]);
 
-  // Pendant le chargement, on n'affiche rien
+  // Pendant le chargement, on n'affiche rien (évite une redirection trop tôt)
   if (isLoading) {
     return null;
   }
 
-  // Si aucun logement n'a cet id, on affiche la page 404
+  // Si aucun logement n'a cet id, on redirige vers la page d'erreur
   if (!logement) {
-    return <NotFound />;
+    return <Navigate to="/404" replace />;
   }
 
   return ( // envoie le contenu en JSX à React

@@ -12,6 +12,7 @@ export default function AppRouter() {
         <Route path="/" element={<Home />} /> 
         <Route path="/about" element={<APropos />} />
         <Route path="/logement/:id" element={<Logement />} />
+        <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
   );
