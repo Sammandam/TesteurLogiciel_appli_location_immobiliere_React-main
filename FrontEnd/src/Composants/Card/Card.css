@@ -25,11 +25,19 @@
   left: 10px;
   right: 10px;
 }
-
-.card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
+/* Dégradé pour améliorer la lisibilité du texte sur l'image */
+.card::after { 
+  content: ""; /* crée l'élément fantôme (vide), obligatoire avec ::after */
+  position: absolute; /* il se place par-dessus la carte */
+  inset: 0; /* il couvre toute la carte */
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+/* Mobile : cartes rectangulaires au lieu de carrées */
+@media (max-width: 768px) {
+  .card {
+    aspect-ratio: auto;
+    height: 255px;
+  }
 }
 

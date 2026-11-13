@@ -26,3 +26,23 @@
   font-size: 16px;
   font-weight: 400;
 }
+
+/* Mobile : textes plus petits */
+@media (max-width: 768px) {
+  .notfound {
+    padding: 100px 0 60px;
+  }
+
+  .notfound__title {
+    font-size: 96px;
+  }
+
+  .notfound__text {
+    font-size: 18px;
+    margin: 20px 0 130px;
+  }
+
+  .notfound__link {
+    font-size: 14px;
+  }
+}

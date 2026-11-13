@@ -27,3 +27,24 @@ Nav ul li a {
 .header__link.active {
   text-decoration: underline;
 }
+
+/* Mobile : header plus compact */
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+  }
+
+  .header__logo {
+    width: 120px;
+  }
+
+  .header__list {
+    gap: 15px;
+  }
+
+  .header__link {
+    font-size: 12px;
+    text-transform: uppercase; /* "ACCUEIL", "A PROPOS" comme sur la maquette mobile */
+    white-space: nowrap; /* interdit le retour à la ligne : "A PROPOS" reste sur une ligne */
+  }
+}

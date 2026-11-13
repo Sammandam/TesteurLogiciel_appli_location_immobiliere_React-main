@@ -17,3 +17,10 @@ body {
 img {
   max-width: 100%;
 }
+
+/* La page occupe au moins toute la hauteur de l'écran */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

@@ -1,14 +1,39 @@
+/* Pied de page : fond noir, contenu centré, plus d'espace en haut qu'en bas */
 .footer {
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-} 
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 66px 20px 30px;
+  margin-top: 50px;
+  gap: 40px;
+}
 
+/* Logo blanc */
 .footer__logo {
   width: 122px;
   height: auto;
+}
+
+/* Texte du copyright */
+.footer__text {
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Mobile : footer plus compact (toujours à la fin du fichier) */
+@media (max-width: 768px) {
+  .footer {
+    gap: 30px;
+    padding: 62px 20px;
+    margin-top: 30px;
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .footer__text {
+    font-size: 12px;
+  }
 }

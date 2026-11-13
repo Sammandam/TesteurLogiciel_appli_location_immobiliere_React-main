@@ -51,3 +51,20 @@
   font-size: 18px;
   font-weight: 500;
 }
+
+/* Mobile : carrousel moins haut, sans compteur */
+@media (max-width: 768px) {
+  .slideshow {
+    height: 255px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .slideshow__arrow img {
+    width: 24px;
+  }
+
+  .slideshow__counter {
+    display: none;
+  }
+}

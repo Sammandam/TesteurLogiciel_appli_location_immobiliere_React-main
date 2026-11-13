@@ -9,6 +9,7 @@ import "./Home.css";
 export default function Home() {
   // Liste des logements, vide au départ
   const [logements, setLogements] = useState([]);
+  
 
   // Récupère les logements depuis le backend, une seule fois au chargement
   useEffect(() => {
@@ -20,7 +21,7 @@ export default function Home() {
 
   return ( // envoie le contenu en JSX à React
     <div className="home">
-      <Banner image={imageAccueil} alt="Chez vous, partout et ailleurs" />
+      <Banner image={imageAccueil} titre="Chez vous, partout et ailleurs" alt="Falaises au bord de la mer" />
       <section className="home__gallery">
         {/* Une carte par logement */}
         {logements.map((logement) => ( // parcourt la liste des logments et créé une carte pour chacun
@@ -29,9 +30,9 @@ export default function Home() {
             id={logement.id} 
             title={logement.title} 
             cover={logement.cover} 
-          />
+          /> 
         ))}
       </section>
     </div>
   );
-}
+} 

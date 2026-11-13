@@ -43,3 +43,32 @@
   gap: 76px;
   align-items: start; 
 }
+
+/* Mobile : informations empilées */
+@media (max-width: 768px) {
+  .logement__infos {
+    flex-direction: column;
+  }
+
+  .logement__title {
+    font-size: 18px;
+  }
+
+  .logement__location {
+    font-size: 14px;
+    margin: 5px 0 10px;
+  }
+
+  /* Note à gauche, hôte à droite, sur une seule ligne */
+  .logement__side {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Les deux Collapse l'un sous l'autre */
+  .logement__collapses {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

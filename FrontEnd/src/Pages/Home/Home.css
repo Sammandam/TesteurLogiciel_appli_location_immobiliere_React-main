@@ -6,3 +6,22 @@
   border-radius: 25px;
   padding: 56px 50px;
 }
+
+/* Tablette : 2 colonnes */
+@media (max-width: 1024px) {
+  .home__gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px;
+  }
+}
+
+/* Mobile : 1 colonne, sans fond gris */
+@media (max-width: 768px) {
+  .home__gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0;
+    background-color: transparent;
+  }
+}

@@ -19,3 +19,14 @@
   border-radius: 50%;
   object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  .host__name {
+    font-size: 12px;
+  }
+
+  .host__picture {
+    width: 32px;
+    height: 32px;
+  }
+}
