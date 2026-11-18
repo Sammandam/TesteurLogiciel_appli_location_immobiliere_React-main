@@ -14,23 +14,17 @@ export default function Logement() {
   const [logement, setLogement] = useState(null); // le logement trouvé (aucun au départ)
   const [isLoading, setIsLoading] = useState(true); // vrai tant que les données arrivent
 
-  // Récupère uniquement le logement qui a cet id
-useEffect(() => {
-     fetch(`http://localhost:8080/api/properties/${id}`)
-    .then((response) => {
-      // Si le serveur répond par une erreur (ex : 404), le logement n'existe pas
-      if (!response.ok) {
-        throw new Error("Logement introuvable");
-      }
-      return response.json();
-    })
-    .then((data) => {
-      // Sécurité supplémentaire : on vérifie que la réponse est bien un logement
-      setLogement(data && data.id ? data : null);
+// Récupère la liste des logements, puis cherche celui qui a cet id
+useEffect(() => { 
+  fetch("http://localhost:8080/api/properties")
+    .then((response) => response.json())
+    .then((data) => { 
+      // find renvoie le logement trouvé, ou undefined s'il n'existe pas
+      setLogement(data.find((item) => item.id === id) || null);
       setIsLoading(false);
     })
-    .catch(() => {
-      setLogement(null);
+    .catch((error) => {
+      console.error("Erreur de chargement :", error);
       setIsLoading(false);
     });
 }, [id]);
